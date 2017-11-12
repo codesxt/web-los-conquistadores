@@ -91,6 +91,18 @@ a:focus {
 
 .nav.navbar-nav {
     background-color: rgba(255,255,255,.7);
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+    border-radius: 10px;
+}
+
+.nav.navbar-nav li,
+.nav.navbar-nav li a,
+.nav.navbar-nav li a:hover,
+.nav.navbar-nav li a:active {
+  -webkit-border-radius: 10px !important;
+  -moz-border-radius: 10px !important;
+  border-radius: 10px !important;
 }
 
 .navbar-custom.top-nav-collapse .nav.navbar-nav {
@@ -831,4 +843,35 @@ Parallax
 		font-size: 20px;
 	}
 
+}
+
+@media only screen and (max-width: 768px) {
+    /* For mobile phones: */
+    .slogan h2 span {
+      display: flex;
+      justify-content: center;
+      font-size: 30px;
+    }
+}
+
+/* Custom Styles */
+@media only screen and (min-device-width : 1024px) {
+  .navbar-brand h1 {
+    visibility: visible;
+  }
+  .logo {
+    width: 250px;
+  }
+  .intro {
+    padding: 100px !important;
+  }
+}
+
+@media only screen and (min-device-width : 0px) and (max-device-width : 1024px) {
+  .navbar-brand h1 {
+    visibility: hidden;
+  }
+  .logo {
+    width: 200px;
+  }
 }
