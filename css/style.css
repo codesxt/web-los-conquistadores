@@ -878,3 +878,8 @@ Parallax
     margin-bottom: 25px !important;
   }
 }
+
+.carousel {
+  width: 70%;
+  margin: auto;
+}
